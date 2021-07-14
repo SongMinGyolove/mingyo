@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="스타일1.css">
+	</head>
+	   <style>
+      @keyframes circleShow {
+        from {
+          opacity: 0;
+          transform: translateY(100px) scale(0.5);
+          background-color: aqua;
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .text-area {
+        margin-top: 90px;
+        margin-left: 24px;
+      }
+
+      .text-area h1 {
+        margin-bottom: 22px;
+        animation: showText 1s;
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      .line {
+        width: 46px;
+        height: 1px;
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        background-color: #ffe6cf;
+        opacity: 0.2;
+      }
+
+      .volume {
+        margin-bottom: 85px;
+      }
+
+      #circle-wrapper {
+        position: relative;
+        margin-left: 24px;
+        margin-top: 42px;
+        height: 246px;
+      }
+
+      .circle {
+        width: 246px;
+        height: 246px;
+        border-radius: 50%;
+        position: absolute;
+        animation: circleShow 1s;
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        animation-fill-mode: both;
+      }
+
+      .circle:nth-child(1) {
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        animation-delay: 0.1s;
+      }
+
+      .circle:nth-child(2) {
+        background-color: #ffc000;
+        left: 82px;
+        animation-delay: 0.2s;
+      }
+
+      .circle:nth-child(3) {
+        background-color: #fedd15;
+        left: 164px;
+        top: 0;
+        animation-delay: 0.3s;
+      }
+	  .circle:nth-child(4) {
+        background-color: #C8FE2E;
+        left: 246px;
+        top: 0;
+        animation-delay: 0.4s;
+      }
+	  .circle:nth-child(5) {
+        background-color: #40FF00;
+        left: 328px;
+        top: 0;
+        animation-delay: 0.5s;
+      }
+	  .circle:nth-child(6) {
+        background-color: #00FFBF;
+        left: 410px;
+        top: 0;
+        animation-delay: 0.6s;
+      }
+	  .circle:nth-child(7) {
+        background-color: #58FAF4;
+        left: 492px;
+        top: 0;
+        animation-delay: 0.7s;
+      }
+	  .circle:nth-child(8) {
+        background-color: #08298A;
+        left: 574px;
+        top: 0;
+        animation-delay: 0.8s;
+      }
+	  .circle:nth-child(9) { /*여기부터 색 바꾸기*/
+        background-color: #8258FA;
+        left: 656px;
+        top: 0;
+        animation-delay: 0.9s;
+      }
+	  .circle:nth-child(10) {
+        background-color: #DA81F5;
+        left: 738px;
+        top: 0;
+        animation-delay: 1s;
+      }
+	  .circle:nth-child(11) {
+        background-color: #FF0080;
+        left: 820px;
+        top: 0;
+        animation-delay: 1.1s;
+      }
+	  .circle:nth-child(12) {
+        background-color: #FA5882;
+        left: 902px;
+        top: 0;
+        animation-delay: 1.2s;
+      }
+	  
+
+      #badge {
+        background-color: #ffc000;
+        width: 56px;
+        height: 56px;
+        color: #485861;
+        margin-left: 24px;
+        padding-left: 13px;
+        padding-top: 18px;
+        font-size: 9px;
+        line-height: 11px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 24px;
+        font-weight: bold;
+        animation: slideDown 0.5s;
+        animation-fill-mode: both;
+        animation-delay: 0.5s;
+      }
+    </style>
+<body>
+	<h1>
+	<div id="circle-wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    
+		<span>H</span>
+		<span>E</span>
+		<span>L</span>
+		<span>L</span>
+		<span>O</span>
+		<span>!</span>
+		<span>!</span>
+		<span>!</span>
+	</div>
+</body>
+</html>

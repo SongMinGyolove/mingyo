@@ -1,0 +1,167 @@
+<!--메뉴-1.html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메뉴-1</title>
+<link rel="stylesheet" href="스타일1.css">
+	</head>
+	   <style>
+		body { background-color: #FA5882;}
+
+	 @keyframes circleShow {
+        from {
+          opacity: 0;
+          transform: translateY(300px) scale(0.25);
+          background-color: /*#A901DB;*/ #F8E0F7;
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .text-area {
+        margin-top: 90px;
+        margin-left: 24px;
+      }
+
+      .text-area h1 {
+        margin-bottom: 22px;
+        animation: showText 1s;
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      .line {
+        width: 46px;
+        height: 1px;
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        background-color: #ffe6cf;
+        opacity: 0.2;
+      }
+
+      .volume {
+        margin-bottom: 85px;
+      }
+
+      #circle-wrapper {
+        position: relative;
+        margin-left: 24px;
+        margin-top: 42px;
+        height: 246px;
+      }
+
+      .circle {
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        position: absolute;
+        animation: circleShow 1.5s;
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        animation-fill-mode: both;
+      }
+
+      .circle:nth-child(1) { /*I*/
+        background-color:orange;
+       font-family:'Baskerville BT';
+        box-sizing: border-box;
+		 left: 270px;
+        top: 140px;
+        animation-delay: 0.1s;
+		opacity:auto;
+		z-index:5;
+      }
+
+      .circle:nth-child(2) { /*♥*/
+        background-color: #F5BCA9;
+        left: 1300px;
+		top:190px;
+        animation-delay: 0.2s;
+      }
+
+      .circle:nth-child(3) { /*you*/
+         background-color: #21610B;
+        top: 300px;
+        left: 500px;
+        animation-delay: 0.3s;
+		z-index:3;
+      }
+	  .circle:nth-child(4) { /*love*/
+        background-color:#084B8A;
+        left:650px;
+        top: 170px;
+        animation-delay: 0.4s;
+		z-index:2;
+      }
+	  .circle:nth-child(5) { /*My*/
+         background-color: #CED8F6;
+        top: 140px;
+        left: 900px;
+        animation-delay: 0.5s;
+		z-index:1;
+      }
+	  .circle:nth-child(6) { /*Daring*/
+        background-color:#F6CEEC;
+     
+        left: 1100px;
+        top: 80px;
+        animation-delay: 0.6s;
+      }
+
+	 
+/*	  .circle:nth-child(7) { /* 투명*/
+        background-color: transparent;
+       
+        box-sizing: border-box;
+		left: 200px;
+        top: 50px;
+        animation-delay: 0.2s;
+      }
+
+      .circle:nth-child(8) { /**/
+        background-color: transparent;
+		
+        left: 100px;
+		top:0px;
+        animation-delay: 0.3s;
+      }*/
+      #badge {
+        background-color: #ffc000;
+        width: 56px;
+        height: 56px;
+        color: #485861;
+        margin-left: 24px;
+        padding-left: 13px;
+        padding-top: 18px;
+        font-size: 9px;
+        line-height: 11px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 24px;
+        font-weight: bold;
+        animation: slideDown 0.5s;
+        animation-fill-mode: both;
+        animation-delay: 0.5s;
+      }
+    </style>
+<body>
+	<h1>
+	<div id="circle-wrapper">
+      <div class="circle" >I</div>
+      <div class="circle">♥</div>
+      <div class="circle">Love</div>
+      <div class="circle">You</div>
+      <div class="circle">My</div>
+      <div class="circle">Daring</div>
+	<!--  <div class="circle">♥</div>
+      <div class="circle">♪</div>-->
+   
+      
+      
+   
+	</div>
+</body>
+</html>
